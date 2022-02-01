@@ -1,5 +1,5 @@
 # mosaic_project
-This is a project aiming to develop a photo mosaic tool using Python
+This is a project aiming to develop a photo mosaic tool using Python.
 
 The idea is to provide a simple and effective way of creating beautiful photo mosaic collages with a reduced input and manual work by the user.
 

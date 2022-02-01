@@ -3,7 +3,7 @@ This is a project aiming to develop a photo mosaic tool using Python.
 
 The idea is to provide a simple and effective way of creating beautiful photo mosaic collages with a reduced input and manual work by the user.
 
-In release 0.1 a script was implemented to pick any image and, after input of any 2 x 2 dimensions by the user, create a collage with small samples of the original image. See examples below:
+In release 0.1 a script was implemented to pick any image and, after input of any 2 x 2 dimensions by the user, create a collage using multiple small samples of the original image. See examples below:
 
 # ORIGINAL IMAGE
 

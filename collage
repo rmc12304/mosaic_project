@@ -1,0 +1,26 @@
+from PIL import Image
+
+# NOTE: PATH MUST BE UPDATED ACCORDINGLY BEFORE EXECUTION
+im = Image.open('C:/Users/casa/Downloads/WhatsApp Image 2022-01-25 at 10.15.59.jpeg')
+
+w, h = im.size
+
+# NOTE: SCALING OF THE SAMPLE HAS BEEN ARBITRARILY DEFINED AND HARD-CODED @ 10% FROM THE ORIGINAL IMAGE SIZE
+im = im.resize((int(w * .1), int(h * .1)))
+w, h = im.size
+
+print('Enter the number of frames in x axis:')
+x = int(input())
+print('Enter the number of frames in y axis:')
+y = int(input())
+
+# CREATION OF A NEW "CANVAS" WHERE SAMPLES WILL BE PLACED
+collage = Image.new('RGB',(w * x, h * y), (100,0,0))
+
+# LOOP FOR PLACEMENT OF THE SAMPLES ON THE CANVAS TO CREATE A COLLAGE
+for i in range (0, x):
+    for j in range (0, y):
+        collage.paste(im,(im.width * i, im.height * j))
+
+collage.save('C:/Users/casa/Downloads/collage ' + str(x) + ' by ' + str(y) + '.jpg',"JPEG")
+collage.show()
